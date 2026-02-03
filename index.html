@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favi.ico" type="image/x-icon" />
+    <title>Поиск терминала</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Поиск информации по терминалу</h1>
+    <div class="search-box">
+        <div class="input-wrapper">
+            <input type="text" id="search" placeholder="Введите модель терминала (например, A90)" />
+
+            <button id="clearButton">Очистить</button>
+        </div>
+        <div class="suggestions" id="suggestions"></div>
+        <div class="result" id="result"></div>
+    </div>
+      <div class="top-box" id="topBox">
+      
+        <div class="top-switch">
+            <button type="button" data-mode="top" class="switch-btn active">Топ-5 терминалов</button>
+            <button type="button" data-mode="note" class="switch-btn">Блокнот</button>
+        </div>
+          
+        <div id="topList" class="top-list empty">
+            Пока пусто — откройте карточку терминала, и через 5 секунд он появится здесь.
+        </div>
+        <div id="noteBlock" class="note-block hidden">
+            <textarea id="noteArea" placeholder="Поле для заметок — они сохраняются сами..."></textarea>
+            <button id="clearNote" class="top-clear">Очистить блокнот</button>
+        </div>
+    </div>
+
+    <script src="terminalsData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

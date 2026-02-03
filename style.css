@@ -1,0 +1,267 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #F5F8FB;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+}
+
+.search-box {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+#clearButton {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #F3F6F4;
+  color: #444444;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.suggestions {
+  background: #fff;
+  margin-top: 1rem;
+}
+
+.suggestion {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background: #f3f4f6;
+}
+
+.result {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.field {
+  margin-bottom: 0.5rem;
+}
+
+.field strong {
+  display: inline-block;
+  width: 180px;
+}
+
+.field.gray {
+  color: #9ca3af;
+}
+
+.highlight {
+  background: #eef2ff;
+  border: 1px solid #e5e7eb;
+  color: #3730a3;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem 1rem 0.75rem 1rem;
+}
+
+.card-header {
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.card-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0.75rem 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.85rem;
+  line-height: 1;
+  border-radius: 999px;
+  background: #f3f6f4;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.badge-termType {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.85rem;
+  line-height: 1;
+  border-radius: 999px;
+  background: #eef2ff;
+  border: 1px solid #e5e7eb;
+  color: #3730a3;
+  white-space: nowrap;
+}
+
+.section-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.top-box {
+  max-width: 600px;
+  margin: 1rem auto 0;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+.top-box h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.top-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.top-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  background: #f9fafb;
+}
+
+.top-title {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #1f2937;
+  margin-right: 0.5rem;
+}
+
+.top-meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.top-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  background: #eef2ff;
+  border: 1px solid #e5e7eb;
+  color: #3730a3;
+  white-space: nowrap;
+}
+
+.top-clear {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.top-list.empty {
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+.top-item {
+  cursor: pointer;
+}
+
+.top-item:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+.top-item:hover {
+  background: #eef2ff;
+}
+
+.top-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.top-switch button {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.top-switch button.active {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.note-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.note-block textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
